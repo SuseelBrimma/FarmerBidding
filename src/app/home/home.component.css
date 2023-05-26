@@ -1,0 +1,157 @@
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: .5s;
+}
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+
+.bg-vegetable {
+    background: linear-gradient(rgba(52, 173, 84, .2), rgba(52, 173, 84, .2)), url(/assets/fruit.png) bottom right no-repeat;
+    background-size: contain;
+}
+
+
+.service-item {
+    box-shadow: 0 0 20px black;
+    transition: .5s;
+}
+
+.about i,
+.service-item i {
+    background-image: linear-gradient(var(--success), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+.text-secondary {
+    color: #f93 !important;
+}
+.display-1 {
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.service-item:hover {
+    color: var(--light);
+    background: var(--success) !important;
+}
+
+.service-item:hover i {
+    background-image: linear-gradient(var(--light), var(--light));
+}
+
+.service-item:hover h4 {
+    transition: .5s;
+}
+
+.service-item:hover h4 {
+    color: var(--light);
+}
+
+.blog-item img {
+    transition: .5s;
+}
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+.blog-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(52, 173, 84, 0), rgba(52, 173, 84, 1));
+    z-index: 1;
+}
+.bg-footer {
+    background: linear-gradient(rgba(52, 173, 84, .7), rgba(52, 173, 84, .7)), url(/assets/footer.png) center bottom no-repeat;
+    background-size: contain;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8D9AA8;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25
+}
+hr:not([size]) {
+    height: 1px
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}

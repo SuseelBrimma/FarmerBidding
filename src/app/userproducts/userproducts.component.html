@@ -1,0 +1,76 @@
+
+<body class="img">
+  <p-toast></p-toast>
+  <div class="card-container">
+    <div class="card" *ngFor="let item of data; let i =index">
+      <table>
+        <tr>
+          <td><img [src]="item.image" style="width: 100px; margin-left: 60%;"></td>
+        </tr>
+        <br>
+        <tr>
+          <td>Name</td>
+          <td style="width: 30%;"></td>
+          <td>{{item.ProductName}}</td>
+        </tr>
+        <br>
+        <tr>
+          <td>Price</td>
+          <td style="width:30%;"></td>
+          <td>{{item.ProductPrice}}</td>
+        </tr>
+        <br>
+        <tr>
+          <td>BID-START</td>
+          <td style="width: 30%;"></td>
+          <td>{{item.BidStart}}</td>
+        </tr>
+        <br>
+        <tr>
+          <td>Quantity</td>
+          <td style="width: 30%;"></td>
+          <td>{{item.ProductQuantity}}</td>
+        </tr>
+      </table>
+      <br>
+      <button (click)="showPopUp(i)" role="button" style="width: 100px; margin-left: 100px;">Start Bit</button>
+    </div>
+  </div>
+  <div>
+    <p-dialog class="dialog" [(visible)]="display" *ngFor="let b of this.data1; let i=index"
+      [style]="{width:'50vh',height:'120vh'}" [baseZIndex]="10000">
+      <hr>
+        <h3 style="text-align:center;color: white; background-color: #121313;">Bidding Details</h3>
+        <div class="card1" >
+          <hr>
+          <form #usersForms="ngForm" style="height: 32vh;" >
+            <div class="text" style="text-align: center;">
+              <input type="amount" [(ngModel)]="BiddingAmount" name="BiddingAmount" placeholder="enter bid amount"
+                required="required" />
+              <br><br>
+            </div>
+            <div class="text" style="text-align: center;">
+              <input type="text" [(ngModel)]="CustomerName" name="CustomerName" placeholder="enter user name" />
+              <br><br>
+            </div>
+            <div class="text" style="text-align: center;">
+              <input type="text" [(ngModel)]="CustomerEmail" name="CustomerEmail" placeholder="enter  email" required="required">
+              <br><br>
+            </div>
+            <div class="text" style="text-align: center;">
+              <input type="text" [(ngModel)]="CustomerAddress" name="CustomerAddress" placeholder="enter  address" required="required">
+              <br><br>
+            </div>
+        
+            <button class="btn-fetch" [disabled]="usersForms.form.invalid"
+              (click)="ShowMyBidding(b.name ,b.id,b.id)" style="background-color: greenyellow;
+              color: #121313; margin-left: 30%;">Submit
+              </button>
+              <p-button icon="pi pi-check" id="but" (click)="display = false" label="Close"
+              styleClass="p-button-text" style="padding-left: 10px;"></p-button>
+              <br>
+          </form>
+        </div>
+    </p-dialog>
+  </div>
+</body>

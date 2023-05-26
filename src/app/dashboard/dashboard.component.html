@@ -1,0 +1,29 @@
+<main role="main" class="container mt-5">
+  <div class="container">
+    <div class="text-center mt-5">
+      <p class="text-bold " [innerText]="'Hi '+this.user.displayName"></p>
+    </div>
+  </div>
+</main>
+<br>
+<div class="card">
+  <h5 class="head">BIDDING DETAILS</h5>
+  <table>
+    <tr class="tableheader">
+      <td>ProductName</td>
+      <td>BIDDING AMOUNT</td>
+      <td>CUSTOMER NAME</td>
+      <td>CUSTOMER EMAIL</td>
+      <td>CUSTOMER ADDRESS</td>
+
+    </tr>
+    <tr *ngFor="let a of myArray">
+      <td>{{a.ProductName}}</td>
+      <td>{{a.BiddingAmount}}</td>
+      <td>{{a.CustomerName}}</td>
+      <td>{{a.CustomerEmail}}</td>
+      <td>{{a.CustomerAddress}}</td>
+
+    </tr>
+  </table>
+</div>

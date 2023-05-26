@@ -1,0 +1,36 @@
+<body class="img">
+    <div class="container">
+        <div class="card" *ngFor="let item of data;let i =index">
+            <table>
+                <tr>
+                    <td><img [src]="item.image" style="width: 100px; margin-left: 60%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>PRODUCT NAME</td>
+                    <td style="width: 30%;"></td>
+                    <td>{{item.ProductName}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td>PRODUCT PRICE</td>
+                    <td style="width: 30%;"></td>
+                    <td>{{item.ProductPrice}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td>BID-START PRICE</td>
+                    <td style="width: 30%;"></td>
+                    <td>{{item.BidStart}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Quantity</td>
+                    <td style="width: 30%;"></td>
+                    <td>{{item.ProductQuantity}}</td>
+                </tr>
+                <br>
+            </table>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,15 @@
+#button
+{
+    background-color: aliceblue;
+    color: black; 
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+}  
+ .img{
+    background-image:url(https://wallpapercave.com/wp/wp6866158.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+ }

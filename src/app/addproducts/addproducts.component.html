@@ -1,0 +1,20 @@
+<body class="img">
+  <br><br><br>
+  <div class="details">
+    <h1 style="text-align: center;">ADD PRODUCT</h1>
+    <hr><br>
+    <form #usersForms="ngForm">
+      <input type="text" ngModel name="ProductName" placeholder="enter name" required="required">
+      <br><br>
+      <input type="text" ngModel name="ProductPrice" placeholder="enter price" required="required">
+      <br><br>
+      <input type="text" ngModel name="BidStart" placeholder="enter Bid start" required="required">
+      <br><br>
+      <input type="text" ngModel name="ProductQuantity" placeholder="enter quantity" required="required">
+      <br><br>
+     
+      <button class="btn-fetch"  (click)="getUserFormData(usersForms.value)">Add
+        Products</button>
+    </form>
+  </div>
+</body>

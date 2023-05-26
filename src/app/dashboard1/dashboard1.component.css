@@ -1,0 +1,46 @@
+#lineOne
+{
+    font-family: 'play';
+     text-decoration: inherit;
+    color:black;
+    font-size: 80px;
+    font-weight: 1000;
+    text-align: center;
+    margin: inherit
+}
+
+#SecondLine
+{
+    font-family: 'play';
+    text-decoration: inherit;
+    font-size:30px;
+    color:black;
+    font-weight: 1000;
+    text-align: center;
+    margin: inherit
+
+}
+
+.container
+{
+    margin-left: 10%;
+    
+    
+}
+.img{
+    background-image:url(https://media.gettyimages.com/photos/fresh-fruits-and-vegetables-picture-id589415708);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+
+  }
+  .moto-text_system_5{
+    margin: inherit;
+    text-align: center;
+    
+  }
+  .pt-5
+  {
+    margin-left: 70px;
+  }
